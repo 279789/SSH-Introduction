@@ -60,10 +60,10 @@ History of SSH – Interview mit Tatu Ylönen
 11. **Wrong User**: Type `ssh <remote-host-ip>`. Do not use the `<new_user>@` in front of it. Take notes what happens.
 
 ## 3) Questions
-1. What reason do we need _SSH_ for?
-2. What is necessary to be able to log in via _SSH_?
-3. Why are we asked to store the _fingerprint_ of the remote-host?
-4. Why does the login-attempt from task 11 not work?
+1. What reason do we need _SSH_ for? SSH stands for Secure Shell and is very important in the modern world. SSH is an remote shell, that is encrypted (secured). This allows secure communication in an insecure network.
+2. What is necessary to be able to log in via _SSH_? First you need a Host and a Client, that are connected inside a network. Both should have installed sshd which comes with most Linux distributions, if not you have to install it. To check your ssh connection,you could ping your host frpm your client. If you have everything that I've listed you are ready to go.
+3. Why are we asked to store the _fingerprint_ of the remote-host? The fingerprint is used to authentificate the Server. By the first connection, you have to check if this is the correct server. After confirming, the fingerprint get's saved on the client, so that it always knows that it's the right server.
+4. Why does the login-attempt from task 11 not work? It doesn't work, because there is the wrong userer used, you have to use a user that exist on the remote server.
 
 
 ## 4) Advice
